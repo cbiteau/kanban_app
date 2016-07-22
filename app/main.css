@@ -41,7 +41,7 @@ body {
 .lane-delete {
   float: right;
 
-  margin-left: 0.5em,auto;
+  margin-left: 0.5em;
 
   visibility: hidden;
 }
@@ -70,7 +70,7 @@ body {
 .notes {
   margin: 0.5em;
   padding-left: 0;
-  max-width: 10em;
+  max-width: 15em;
   list-style: none;
 }
 
@@ -88,14 +88,14 @@ body {
   transition: .6s;
 }
 .note .value {
-  display: inline-block;
+  float: left;
 }
 .note .editable {
   float: left;
 }
 .note .delete {
   float: right;
-  padding: 0;
+  padding-left: 0.5em;
   background-color: rgba(0, 0, 0, 0);
   border: none;
 
