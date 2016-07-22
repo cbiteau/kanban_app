@@ -18,7 +18,7 @@ Editable.Value = ({value, className, ...props}) => <span className={classnames('
 
 class Edit extends React.Component {
   render() {
-    const {value, className, ...props} = this.props;
+    const {value, className, onEdit, ...props} = this.props;
 
     return <input
       className={classnames('edit', className)}
@@ -36,7 +36,6 @@ class Edit extends React.Component {
   }
   finishEdit = (e) => {
     const value = e.target.value;
-
     if(this.props.onEdit) {
       this.props.onEdit(value);
     }
