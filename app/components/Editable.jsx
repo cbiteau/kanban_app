@@ -14,6 +14,17 @@ const Editable = ({editing, value, onEdit, className, ...props}) => {
     value={value} />;
 }
 
+Editable.propTypes = {
+  value: React.PropTypes.string,
+  editing: React.PropTypes.bool,
+  onEdit: React.PropTypes.func
+};
+Editable.defaultProps = {
+  value: '',
+  editing: false,
+  onEdit: () => {}
+};
+
 Editable.Value = ({value, className, ...props}) => <span className={classnames('value', className)} {...props}>{value}</span>
 
 class Edit extends React.Component {
